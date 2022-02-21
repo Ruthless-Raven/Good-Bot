@@ -1,12 +1,10 @@
 import random
-import string
 import nltk
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 from newspaper import Article
 
-import numpy as np
 import warnings
 
 warnings.filterwarnings('ignore')
@@ -15,7 +13,8 @@ warnings.filterwarnings('ignore')
 nltk.download('punkt', quiet=True)
 
 # Get the article
-article = Article('https://www.mayoclinic.org/diseases-conditions/chronic-kidney-disease/symptoms-causes/syc-20354521')
+URL = input("GOOD BOT: Please paste the URL that you would like for me to look at")
+article = Article(URL)
 article.download()
 article.parse()
 article.nlp()
@@ -87,7 +86,7 @@ def bot_response(user_input):
 
 
 # Start the chat
-print('Good Bot: I am Good Bot. I will answer your queries about Chronic Kidney Disease. If you want to exit, type bye.')
+print('Good Bot: I am Good Bot. Ask any questions on the URL. If you want to exit, type bye.')
 exit_list = ['exit', 'see you later', 'bye', 'quit', 'break', 'goodbye']
 while True:
     user_input = input()

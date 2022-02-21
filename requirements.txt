@@ -1,0 +1,4 @@
+nltk~=3.7
+setuptools~=58.1.0
+sklearn~=0.0
+scikit-learn~=1.0.2
