@@ -36,9 +36,10 @@ def greeting_response(text):
     text = text.lower()
 
     # Bots greeting response
-    bot_greetings = ['Hello', 'hi', 'hey', 'sup', 'yo']
+    bot_greetings = ['Hello', 'hi', 'hey', 'sup', 'yo', 'Greetings']
     # Users greeting
-    user_greetings = ['hi', 'hey', 'hello', 'greetings', 'sup', 'yo', 'wassup', 'what is up']
+    user_greetings = ['hi', 'hey', 'hello', 'greetings', 'sup', 'yo', 'wassup', 'what is up', 'good morning',
+                      'good afternoon', 'good evening']
 
     for word in text.split():
         if word in user_greetings:

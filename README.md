@@ -1,10 +1,10 @@
 # Good-Bot
 
-Good-Bot is a Python module for dealing with word pluralization.
+Good-Bot is an interactive Python module that assists users in analyzing text documents.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Good-Bot.
 
 ```bash
 pip install training
@@ -15,10 +15,10 @@ pip install training
 ```python
 import training
 
-# returns 'words'
+# returns a randomized word in the bots greeting list 
 
 
-# returns 'geese'
+# returns entire document seperated by sentences
 
 
 # returns 'phenomenon'
