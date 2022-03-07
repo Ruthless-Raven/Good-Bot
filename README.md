@@ -10,7 +10,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Good-Bo
 $ pip install Good-Bot
 $ Good-Bot
 ```
-##Executable Files:
+## Executable Files:
 - Good-Bot.py - Includes all functions required for text scraping operations.
 - Test.py - Uses the functions defined in the Good-Bot.py file and performs unit testing.
 
