@@ -95,8 +95,7 @@ while True:
         print('Good Bot: Terminating sequence. Talk to you later')
         break
     else:
-        if greeting_response(user_input) != None:
+        if greeting_response(user_input) is not None:
             print('Good Bot: '+greeting_response(user_input))
         else:
             print('Good Bot: '+bot_response(user_input))
-

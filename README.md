@@ -15,7 +15,10 @@ $ Good-Bot
 - Test.py - Uses the functions defined in the Good-Bot.py file and performs unit testing.
 
 ## Intended Audience
-Anyone that is tired of using ctrl-f to find whatever you are looking for in any text
+- Business leaders looking to automate website support and reduce customer service costs
+- Product managers who want to implement a chatbot to automate the collection of customer feedback.
+- GitHub community to optimize and add more functionality to Good-Bot
+- Anyone that is tired of using ctrl-f to find whatever you are looking for in any text
 document and is looking for a more interactive user-interface bot that does all that work for you!
 
 ## Contributing
