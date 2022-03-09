@@ -1,0 +1,31 @@
+# what language the build will be configured for
+language: python
+
+# specify what versions of python will be used
+# note that all of the versions listed will be tried
+python:
+    - 3.4
+    - 3.5
+    - 2.7
+
+# what branches should be evaluated
+branches:
+    only:
+        - main
+
+# list of commands to run to setup the environment
+install:
+    - pip install coverage
+    - pip install coveralls
+    - pip install flake8
+    - pip install -r requirements.txt
+
+
+# the actual commands to run
+script:
+    - python run -m unittest discover
+
+# generate a coverage report to send to back to user
+after_success:
+    - flake8 --version
+    - flake8 Good-Bot
