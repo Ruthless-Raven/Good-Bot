@@ -19,7 +19,7 @@ setup(
     install_requires=['nltk', 'newspaper'],
     keywords=['python', 'chatbot', 'bot', 'webscrape'],
     classifiers=[
-        "Development Status :: 3- Final",
+        "Development Status :: 6 - Mature",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "OPERATING System :: Unix",
