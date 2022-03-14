@@ -1,3 +1,8 @@
+"""Good-Bot module is dependent on the random, nltk, sklearn and newspaper libraries. It prompts the user to input a
+URL to a text document where the module analyzes the text and returns a response through count vectorization and
+cosine similarity scores.
+"""
+
 import random
 import nltk
 from sklearn.feature_extraction.text import CountVectorizer
@@ -30,8 +35,11 @@ sentence_list = nltk.sent_tokenize(text)
 # Print
 print(sentence_list)
 
+''' A function to return a random greeting response to a users greeting. Automatically converts every user input into
+lower case to prevent any errors with valid user responses. List of potential greetings is used as a training data, a 
+randomized greeting from the bot greetings list is returned'''
 
-# A function to return a random greeting response to a users greeting
+
 def greeting_response(text):
     text = text.lower()
 
@@ -44,6 +52,9 @@ def greeting_response(text):
     for word in text.split():
         if word in user_greetings:
             return random.choice(bot_greetings)
+
+
+'''Index sorting algorithm that creates an index and sorts the sentences within the text document'''
 
 
 def index_sort(list_var):
@@ -60,7 +71,11 @@ def index_sort(list_var):
     return list_index
 
 
-# Create the bots response
+'''Response function that uses cosine similarities from pre-defined texts to generate a response. It is one of the 
+metrics to measure the text-similarity between two documents irrespective of their size in natural language
+processing'''
+
+
 def bot_response(user_input):
     user_input = user_input.lower()
     sentence_list.append(user_input)
@@ -96,6 +111,6 @@ while True:
         break
     else:
         if greeting_response(user_input) is not None:
-            print('Good Bot: '+greeting_response(user_input))
+            print('Good Bot: ' + greeting_response(user_input))
         else:
-            print('Good Bot: '+bot_response(user_input))
+            print('Good Bot: ' + bot_response(user_input))
