@@ -14,6 +14,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 
 class MyTestCase(unittest.TestCase):
+    # Test of our greetingresponse() function
     def test_greetingresponsea(self):
         assert greeting_response("hi") in ['Hello', 'hi', 'hey', 'sup', 'yo', 'Greetings'] # add assertion here
 
@@ -32,9 +33,9 @@ class MyTestCase(unittest.TestCase):
     def test_greetingresponsef(self):
         assert greeting_response("Greetings") in ['Hello', 'hi', 'hey', 'sup', 'yo', 'Greetings']
 
+    # Test of our index sort() function
     def test_indexsorta(self):
         assert index_sort(['a', 'b', 'c']) == 3
-
 
     # Test of our bot_response() function
     def test_botresponse(self):
